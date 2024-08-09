@@ -1,0 +1,25 @@
+### Test Order Creation
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "recipient": {
+    "name": "Alana Day",
+    "address1": "12 address avenue, Bankstown",
+    "city": "Brussels",
+    "state_code": "",
+    "country_code": "BE",
+    "zip": "1000"
+  },
+  "items": [
+    {
+      "variant_id": 825,
+      "quantity": 1,
+      "files": [
+        {
+          "url": "http://idata.over-blog.com/1/10/29/90//femme-au-bar.jpg"
+        }
+      ]
+    }
+  ]
+}
